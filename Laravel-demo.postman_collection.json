@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "61e80d9e-5108-4d9b-9790-a62be5da1aaa",
+		"name": "Laravel-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4017/api/aircraft",
+					"host": [
+						"localhost"
+					],
+					"port": "4017",
+					"path": [
+						"api",
+						"aircraft"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get sorted",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:4017/api/aircraft/sort",
+					"host": [
+						"localhost"
+					],
+					"port": "4017",
+					"path": [
+						"api",
+						"aircraft",
+						"sort"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert new aircraft",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type",
+							"value": "Emergency",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "Small",
+							"type": "text"
+						},
+						{
+							"key": "created_at",
+							"value": "2021-05-17",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4017/api/aircraft/",
+					"host": [
+						"localhost"
+					],
+					"port": "4017",
+					"path": [
+						"api",
+						"aircraft",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete aircraft",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type",
+							"value": "Emergency",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "Small",
+							"type": "text"
+						},
+						{
+							"key": "created_at",
+							"value": "2021-05-17",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4017/api/aircraft/",
+					"host": [
+						"localhost"
+					],
+					"port": "4017",
+					"path": [
+						"api",
+						"aircraft",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
