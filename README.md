@@ -1,15 +1,34 @@
-## Contributing
+## Requirements
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Install docker on your pc or mac you can download it [here](https://www.docker.com).
 
-## Code of Conduct
+## Download this repository
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Mount the project
 
-## Security Vulnerabilities
+1.- Once you download the code, on your terminal navigate to the place where you have the repository like this:
+```bash
+cd c:/projects/laravel-demo-jamezcua
+```
+2.- Run the following command:
+```bash
+docker-compose up -d
+```
+3.- Wait until the Container Start
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+4.- on your browser go to: http://localhost:4017/ to see the laravel home page
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## REST API Routes
+
+You can import the collection on the Laravel-demo.postman_collection.json, import it into your postman
+
+## Code of interest
+
+On the following routes You can find the code related to the test:
+
+```bash
+/laravel-demo-jamezcua/routes/api.php
+/laravel-demo-jamezcua/app/Http/Controllers/AircraftController.php
+/laravel-demo-jamezcua/app/Models/AirCraft.php
+```
